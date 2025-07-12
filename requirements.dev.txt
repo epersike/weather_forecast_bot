@@ -5,6 +5,7 @@ cattrs==25.1.1
 certifi==2025.7.9
 charset-normalizer==3.4.2
 distro==1.9.0
+discord.py==2.4.0
 flatbuffers==25.2.10
 greenlet==3.2.3
 h11==0.16.0
@@ -17,7 +18,6 @@ jsonpatch==1.33
 jsonpointer==3.0.0
 langchain==0.3.26
 langchain-core==0.3.68
-langchain-ollama==0.3.3
 langchain-text-splitters==0.3.8
 langsmith==0.4.5
 niquests==3.14.1
@@ -31,6 +31,7 @@ platformdirs==4.3.8
 pydantic==2.11.7
 pydantic_core==2.33.2
 python-dateutil==2.9.0.post0
+python-dotenv==1.1.1
 pytz==2025.2
 PyYAML==6.0.2
 qh3==1.5.3
@@ -53,3 +54,5 @@ urllib3==2.5.0
 urllib3-future==2.13.900
 wassima==1.2.2
 zstandard==0.23.0
+langchain-openai==0.3.27
+openai==1.95.0
