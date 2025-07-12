@@ -5,7 +5,7 @@ from langchain.prompts import (
 )
 from langchain_core.runnables import RunnableBranch, RunnablePassthrough, RunnableLambda
 from langchain_core.output_parsers import StrOutputParser
-from get_weather import get_weather_forecast
+from .get_weather import get_weather_forecast
 
 dotenv.load_dotenv()
 
@@ -98,7 +98,7 @@ full_chain = RunnablePassthrough.assign(
     location=validation_chain
 ) | RunnableLambda(route)
 
-if __name__ == "__main__":
+def test():
     # --- TESTES ---
 
     question = "Qual a previsão do tempo para os próximos dias em blumenau?"

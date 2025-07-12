@@ -1,7 +1,7 @@
 import discord
 import os
 import dotenv
-from pipe import full_chain
+from llm import full_chain
 
 # Carregar variáveis de ambiente do arquivo .env
 dotenv.load_dotenv()
@@ -48,8 +48,9 @@ async def on_message(message):
             # Enviar a resposta de volta para o canal do Discord
             await message.channel.send(response)
 
-# Iniciar o bot com o token
-if DISCORD_TOKEN:
-    client.run(DISCORD_TOKEN)
-else:
-    print("Erro: O DISCORD_TOKEN não foi encontrado no arquivo .env")
+def start():
+    # Iniciar o bot com o token
+    if DISCORD_TOKEN:
+        client.run(DISCORD_TOKEN)
+    else:
+        print("Erro: O DISCORD_TOKEN não foi encontrado no arquivo .env")

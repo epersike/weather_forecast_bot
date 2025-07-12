@@ -4,7 +4,7 @@ import pandas as pd
 import requests_cache
 from retry_requests import retry
 
-from utils import reformat_weather_data
+from .utils import reformat_weather_data
 
 
 def get_weather_forecast(city: str, country_code: str):
