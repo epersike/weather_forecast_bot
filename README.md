@@ -65,7 +65,7 @@ make bot.start
 ## Release History
 
 * 0.0.2
-    Refactored the application folder organization.
+    * Refactored the application folder organization.
 * 0.0.1
     * Work in progress.
 
